@@ -1,13 +1,25 @@
+import { Head } from 'react-static'
 import React from 'react'
 
 export default () => (
-  <div style={{ textAlign: 'center' }}>
+  <div>
+    <Head>
+      <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </Head>
+    
     <h1>Abel Pastur</h1>
     <h2>software developer</h2>
 
-    <a href="/abel-pastur-cv-2019.pdf">View my CV</a>
+    <a href="/abel-pastur-cv-2019.pdf">View CV</a>
 
-    <h3>About me</h3>
-    <p>I'm a full-stack web developer based in London</p>
+    <div className="LI-profile-badge"
+      data-version="v1"
+      data-size="large"
+      data-locale="en_US"
+      data-type="horizontal"
+      data-theme="light"
+      data-vanity="abelpastur">
+        <a className="LI-simple-link" href='https://uk.linkedin.com/in/abelpastur?trk=profile-badge'>Abel Pastur</a>
+    </div>
   </div>
 )
