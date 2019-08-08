@@ -144,7 +144,7 @@ a {
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contact {
@@ -205,6 +205,16 @@ a {
   .side {
     margin-bottom: 3rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content-wrapper {
+    padding-top: 3rem;
+  }
+  .side {
+    max-height: 8rem;
+    max-width: 8rem;
   }
 }
 
@@ -305,9 +315,6 @@ a {
     transform: scale(1);
   }
 }
-
-
-
 
 /* Shared */
 
@@ -436,4 +443,3 @@ a {
 .wallpaper.is-loaded {
   animation-delay: 0.5s;
 }
-
