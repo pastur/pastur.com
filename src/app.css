@@ -159,6 +159,8 @@ a {
 
 .content-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 100vh;
 }
@@ -198,8 +200,6 @@ a {
 @media screen and (max-width: 799px) {
   .content-wrapper {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 5rem 3rem;
   }
   .side {
@@ -220,9 +220,6 @@ a {
 
 @media screen and (min-width: 800px) {
   .content-wrapper {
-    align-items: center;
-    justify-content: space-around;
-    justify-content: space-evenly;
     padding: 4rem;
   }
   .side {
