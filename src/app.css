@@ -63,7 +63,7 @@ a {
   background-image: url("/images/wallpaper.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.1;
   position: fixed;
 }
 
@@ -302,7 +302,7 @@ a {
     transform: scale(1.05);
   }
   to {
-    opacity: 0.2;
+    opacity: 0.1;
     transform: scale(1);
   }
 }
