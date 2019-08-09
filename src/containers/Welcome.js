@@ -56,6 +56,7 @@ export default function Welcome() {
           <div className="description">
             <p>Full stack Web Developer.</p>
             <p>React enthusiast.</p>
+            <p>Based in London.</p>
           </div>
           <div className="contact">
             <a
