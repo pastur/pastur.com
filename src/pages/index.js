@@ -49,20 +49,7 @@ export default () => {
       />
 
       <div className="content-wrapper">
-        <aside className="side">
-          <figure id="picture" className="picture">
-            <div className="picture-shadow" />
-            <img
-              id="pictureImage"
-              className="picture-image"
-              data-image="/images/avatar.jpg"
-              src="/images/avatar.jpg"
-              alt="Portrait of Abel Pastur"
-              width="320"
-              height="320"
-            />
-          </figure>
-        </aside>
+
         <main className="about">
           <h1 className="name">Abel Pastur</h1>
           <p className="job">Software Engineer</p>
@@ -101,6 +88,20 @@ export default () => {
             </li>
           </ul>
         </main>
+
+        <aside className="side">
+          <figure id="picture" className="picture">
+            <div className="picture-shadow" />
+            <img
+              id="pictureImage"
+              className="picture-image"
+              data-image="/images/avatar.jpg"
+              src="/images/avatar.jpg"
+              alt="Portrait of Abel Pastur"
+            />
+          </figure>
+        </aside>
+        
       </div>
     </Fragment>
   );
