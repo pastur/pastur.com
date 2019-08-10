@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import { Head } from "react-static";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import { preloadImage } from '../utils/images'
 
@@ -15,31 +17,24 @@ export default function Welcome() {
   return (
     <Fragment>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand"
-          rel="stylesheet"
-        />
-        <script
-          defer
-          src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
-        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" />
       </Head>
 
-      <div
-        id="wallpaper"
-        className="wallpaper"
-      />
+      <div id="wallpaper" className="wallpaper" />
 
       <div className="content-wrapper">
         <main className="about">
           <h1 className="name">Abel Pastur</h1>
           <p className="job">Software Engineer</p>
+
           <hr className="hr" />
+
           <div className="description">
             <p>Full stack Web Developer.</p>
             <p>React enthusiast.</p>
             <p>Based in London.</p>
           </div>
+
           <div className="contact">
             <a
               className="button"
@@ -52,20 +47,21 @@ export default function Welcome() {
               Get in touch
             </a>
           </div>
+
           <ul className="social">
             <li>
               <a href="https://twitter.com/pastur" target="_blank">
-                <i className="fab fa-twitter" />
+                <FontAwesomeIcon icon={faTwitter}/>
               </a>
             </li>
             <li>
               <a href="https://github.com/pastur" target="_blank">
-                <i className="fab fa-github" />
+                <FontAwesomeIcon icon={faGithub}/>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/abelpastur/" target="_blank">
-                <i className="fab fa-linkedin" />
+                <FontAwesomeIcon icon={faLinkedin}/>
               </a>
             </li>
           </ul>
@@ -82,6 +78,7 @@ export default function Welcome() {
             />
           </figure>
         </aside>
+        
       </div>
     </Fragment>
   );
