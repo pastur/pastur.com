@@ -1,19 +1,11 @@
-export function loadImage(id, targetId) {
-    var el = document.getElementById(id);
-    var targetEl = targetId ? document.getElementById(targetId) : el;
-    var imageToLoad;
-    if (el.dataset.image) {
-      imageToLoad = el.dataset.image;
-    } else if (typeof el.currentSrc === "undefined") {
-      imageToLoad = el.src;
-    } else {
-      imageToLoad = el.currentSrc;
-    }
-    if (imageToLoad) {
+export function preloadImage({ id , imgSrc }) {
+    var elem = document.getElementById(id);
+    
+    if (imgSrc) {
       var img = new Image();
-      img.src = imageToLoad;
+      img.src = imgSrc;
       img.onload = function() {
-        targetEl.classList.add("is-loaded");
+        elem.classList.add("is-loaded");
       };
     }
   }

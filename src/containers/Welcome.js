@@ -1,16 +1,16 @@
 import React, { Fragment, useEffect } from "react";
 import { Head } from "react-static";
 
-import { loadImage } from '../utils/images'
+import { preloadImage } from '../utils/images'
 
 export default function Welcome() {
   
-  function loadImages() {
-    loadImage("wallpaper");
-    loadImage("pictureImage", "picture");
+  function preloadImages() {
+    preloadImage({ id: "wallpaper", imgSrc: "/images/wallpaper.jpg"});
+    preloadImage({ id: "picture", imgSrc: "/images/avatar.jpg"});
   }
 
-  useEffect(loadImages, []);
+  useEffect(preloadImages, []);
 
   return (
     <Fragment>
@@ -28,7 +28,6 @@ export default function Welcome() {
       <div
         id="wallpaper"
         className="wallpaper"
-        data-image="images/wallpaper.jpg"
       />
 
       <div className="content-wrapper">
@@ -78,7 +77,6 @@ export default function Welcome() {
             <img
               id="pictureImage"
               className="picture-image"
-              data-image="/images/avatar.jpg"
               src="/images/avatar.jpg"
               alt="Portrait of Abel Pastur"
             />
