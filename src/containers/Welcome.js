@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from "react";
-import { Head } from "react-static";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,10 +15,6 @@ export default function Welcome() {
 
   return (
     <Fragment>
-      <Head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" />
-      </Head>
-
       <div id="wallpaper" className="wallpaper" />
 
       <div className="content-wrapper">
