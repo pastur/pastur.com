@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default () => (
   <div className="content-wrapper">
-    <h1>404 - Not Found</h1>
-    <p>We couldn't find that page 😔</p>
+    <main>
+      <h1>Not Found</h1>
+      <p>Sorry, we couldn't find that page 😞</p>
+    </main>
   </div>
-)
+);
