@@ -1,17 +1,26 @@
 import React, { Fragment, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
-import { preloadImage } from '../utils/images'
+import { preloadImage } from "../utils/images";
 
 export default function Welcome() {
-  
   function preloadImages() {
-    preloadImage({ id: "wallpaper", imgSrc: "/images/wallpaper.jpg"});
-    preloadImage({ id: "picture", imgSrc: "/images/avatar.jpg"});
+    preloadImage({ id: "wallpaper", imgSrc: "/images/wallpaper.jpg" });
+    preloadImage({ id: "picture", imgSrc: "/images/avatar.jpg" });
   }
 
   useEffect(preloadImages, []);
+
+  const socialLinks = [
+    { href: "https://twitter.com/pastur", icon: faTwitter },
+    { href: "https://github.com/pastur", icon: faGithub },
+    { href: "https://www.linkedin.com/in/pastur", icon: faLinkedin }
+  ];
 
   return (
     <Fragment>
@@ -26,7 +35,7 @@ export default function Welcome() {
 
           <div className="description">
             <p>Full stack Web Developer.</p>
-            <p>React enthusiast.</p>
+            <p>React ecosystem enthusiast.</p>
             <p>Based in London.</p>
           </div>
 
@@ -36,29 +45,21 @@ export default function Welcome() {
               href="/abel-pastur-cv-2019.pdf"
               target="_blank"
             >
-              CV
+              View CV
             </a>
-            <a className="button" href="mailto:contact@pastur.com">
+            <a className="button" href="mailto:getintouch@pastur.com">
               Get in touch
             </a>
           </div>
 
           <ul className="social">
-            <li>
-              <a href="https://twitter.com/pastur" target="_blank">
-                <FontAwesomeIcon icon={faTwitter}/>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/pastur" target="_blank">
-                <FontAwesomeIcon icon={faGithub}/>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/abelpastur/" target="_blank">
-                <FontAwesomeIcon icon={faLinkedin}/>
-              </a>
-            </li>
+            {socialLinks.map(link => (
+              <li>
+                <a href={link.href} target="_blank">
+                  <FontAwesomeIcon icon={link.icon} />
+                </a>
+              </li>
+            ))}
           </ul>
         </main>
 
@@ -73,7 +74,6 @@ export default function Welcome() {
             />
           </figure>
         </aside>
-        
       </div>
     </Fragment>
   );
