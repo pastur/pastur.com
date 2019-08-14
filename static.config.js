@@ -11,6 +11,7 @@ export default {
   }) => (
     <Html lang="en-GB">
       <Head>
+        <title>Abel Pastur</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"/>
         <meta name="apple-mobile-web-app-title" content="Pastur" />
