@@ -1,5 +1,5 @@
 import React from 'react'
 
-import Welcome from '../containers/Welcome'
+import Welcome from '../pages/welcome/Welcome'
 
 export default () => <Welcome />;
