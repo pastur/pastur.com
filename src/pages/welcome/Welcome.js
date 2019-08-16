@@ -1,17 +1,22 @@
 import React, { Fragment } from "react";
 
-import Main from "./Main";
-import Side from "./Side";
+import { CenterLayout, Main, Side } from "../../ui/layouts/center";
+import Intro from "./Intro";
+import Avatar from "./Avatar";
 import Wallpaper from "./Wallpaper";
 
 export default function Welcome() {
   return (
     <Fragment>
       <Wallpaper />
-      <div className="content-wrapper">
-        <Main />
-        <Side />
-      </div>
+      <CenterLayout>
+        <Main>
+          <Intro />
+        </Main>
+        <Side>
+          <Avatar />
+        </Side>
+      </CenterLayout>
     </Fragment>
   );
 }
