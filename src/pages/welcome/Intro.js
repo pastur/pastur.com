@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -6,7 +6,7 @@ import {
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Welcome() {
+export default function Intro() {
   const socialLinks = [
     { href: "https://twitter.com/pastur", icon: faTwitter },
     { href: "https://github.com/pastur", icon: faGithub },
@@ -14,7 +14,7 @@ export default function Welcome() {
   ];
 
   return (
-    <main className="about">
+    <Fragment>
       <h1 className="name">Abel Pastur</h1>
       <p className="job">Software Engineer</p>
 
@@ -36,14 +36,14 @@ export default function Welcome() {
       </div>
 
       <ul className="social">
-        {socialLinks.map(link => (
-          <li>
+        {socialLinks.map((link, i) => (
+          <li key={i}>
             <a href={link.href} target="_blank">
               <FontAwesomeIcon icon={link.icon} />
             </a>
           </li>
         ))}
       </ul>
-    </main>
+    </Fragment>
   );
 }
