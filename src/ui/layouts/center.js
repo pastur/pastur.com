@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CenterLayout = styled.aside.attrs(props => ({
+export const CenterLayout = styled.div.attrs(props => ({
   className: "content-wrapper"
 }))``;
 
