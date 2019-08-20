@@ -3,16 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faGithub,
-  faLinkedin
+  faLinkedin,
+  faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Intro() {
-  const socialLinks = [
-    { href: "https://twitter.com/pastur", icon: faTwitter },
-    { href: "https://github.com/pastur", icon: faGithub },
-    { href: "https://www.linkedin.com/in/pastur", icon: faLinkedin }
-  ];
+const socialLinks = [
+  { href: "https://github.com/pastur", icon: faGithub },
+  { href: "https://stackoverflow.com/users/1722207/abel-pastur", icon: faStackOverflow },
+  { href: "https://twitter.com/pastur", icon: faTwitter },
+  { href: "https://www.linkedin.com/in/pastur", icon: faLinkedin },
+];
 
+export default function Intro() {
   return (
     <Fragment>
       <h1 className="name">Abel Pastur</h1>
