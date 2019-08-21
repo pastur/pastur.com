@@ -8,10 +8,26 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const socialLinks = [
-  { href: "https://github.com/pastur", icon: faGithub },
-  { href: "https://stackoverflow.com/users/1722207/abel-pastur", icon: faStackOverflow },
-  { href: "https://twitter.com/pastur", icon: faTwitter },
-  { href: "https://www.linkedin.com/in/pastur", icon: faLinkedin },
+  {
+    title: "GitHub profile",
+    href: "https://github.com/pastur",
+    icon: faGithub
+  },
+  {
+    title: "Stack Overflow profile",
+    href: "https://stackoverflow.com/users/1722207/abel-pastur",
+    icon: faStackOverflow
+  },
+  {
+    title: "Twitter account",
+    href: "https://twitter.com/pastur",
+    icon: faTwitter
+  },
+  {
+    title: "LinkedIn profile",
+    href: "https://www.linkedin.com/in/pastur",
+    icon: faLinkedin
+  }
 ];
 
 export default function Intro() {
@@ -40,7 +56,7 @@ export default function Intro() {
       <ul className="social">
         {socialLinks.map((link, i) => (
           <li key={i}>
-            <a href={link.href} target="_blank">
+            <a href={link.href} title={link.title} target="_blank">
               <FontAwesomeIcon icon={link.icon} />
             </a>
           </li>
