@@ -7049,6 +7049,11 @@ react-static-plugin-source-filesystem@7.0.10:
     chokidar "^2.1.5"
     glob "^7.1.3"
 
+react-static-plugin-styled-components@7.0.10:
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-styled-components/-/react-static-plugin-styled-components-7.0.10.tgz#f69b7b3e311ff555b85b4b008ed6df45da99ebc4"
+  integrity sha512-FQparFs8zMVKzK74dQ1+WJL4wr0ZOt+IBQvizu6HWxUip/Ob7yF1fVmiZyfP4n5YVftqKVAqe1+zUxxP7W4psQ==
+
 react-static@7.0.10:
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/react-static/-/react-static-7.0.10.tgz#b08d583810c5bf7a2865ea647ea2ceec0eb8f993"
