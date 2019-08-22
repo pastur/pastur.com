@@ -4,12 +4,11 @@ import { Root, Routes } from 'react-static'
 import { Router } from 'components/Router'
 import Spinner from 'components/Spinner'
 
-import GlobalStyle from 'ui/GlobalStyle'
+import './app.css'
 
 function App() {
   return (
     <Root>
-      <GlobalStyle />
       <div className="content">
         <React.Suspense fallback={<Spinner/>}>
           <Router>
