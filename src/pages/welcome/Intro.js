@@ -45,7 +45,7 @@ export default function Intro() {
       </div>
 
       <div className="contact">
-        <a className="button" href="/abel-pastur-cv-2019.pdf" target="_blank">
+        <a className="button" href="/cv" target="_blank">
           View CV
         </a>
         <a className="button" href="mailto:getintouch@pastur.com">
