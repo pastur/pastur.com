@@ -41,8 +41,8 @@ export default function Intro() {
       <hr className="hr" />
 
       <div className="description">
-        <p>Full Stack JavaScript Developer.</p>
-        <p>React & Node.js expert.</p>
+        <p>Full-Stack JavaScript Developer.</p>
+        <p>React & Node.js enthusiast.</p>
         <p>Based in London.</p>
       </div>
 
