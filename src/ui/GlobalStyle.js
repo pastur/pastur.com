@@ -1,29 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
-
-/* Fonts */
-
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quicksand/v13/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-wg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
 * {
   scroll-behavior: smooth;
@@ -34,7 +12,8 @@ html {
   background-color: #00bcf1;
   background-image: linear-gradient(to bottom right, #00bcf1, #180cac);
   color: #fff;
-  font-family: "Quicksand", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -70,14 +49,12 @@ a {
   width: 100%;
 }
 
-.job,
-.button {
-  font-family: "Montserrat", "Quicksand", sans-serif;
+.job {
+  font-family: sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
-.button,
 .social a {
   transform-origin: center;
   transition-duration: 100ms;
@@ -90,23 +67,6 @@ a {
   background-size: cover;
   opacity: 0.1;
   position: fixed;
-}
-
-.button {
-  background-color: #fff;
-  border-radius: 0.4rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: dodgerblue;
-  display: inline-block;
-  font-size: 0.875rem;
-  line-height: 1;
-  padding: 1.25em 2em;
-  text-shadow: none;
-  transition-property: box-shadow, transform;
-  user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
-  will-change: box-shadow, transform;
 }
 
 .social {
@@ -143,16 +103,6 @@ a {
   transform: scale(1.1);
 }
 
-.button:hover {
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.02) translateY(-4px);
-}
-
-.button:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  transform: scale(0.98) translateY(-2px);
-}
-
 .job {
   font-size: 0.75rem;
 }
@@ -169,17 +119,17 @@ a {
 }
 
 .description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .contact {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
   vertical-align: top;
 }
 
-.contact .button {
-  margin: 1em 1em 0 0;
+.contact > *:first-child {
+  margin-right: 1em;
 }
 
 .content-wrapper {
@@ -460,6 +410,6 @@ a {
   animation-delay: 0.5s;
 }
 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

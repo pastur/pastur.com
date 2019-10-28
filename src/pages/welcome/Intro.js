@@ -7,6 +7,8 @@ import {
   faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
 
+import Button from '../../ui/Button'
+
 const socialLinks = [
   {
     title: "GitHub profile",
@@ -39,18 +41,18 @@ export default function Intro() {
       <hr className="hr" />
 
       <div className="description">
-        <p>Full stack Web Developer.</p>
-        <p>React ecosystem enthusiast.</p>
+        <p>Full Stack JavaScript Developer.</p>
+        <p>React & Node.js expert.</p>
         <p>Based in London.</p>
       </div>
 
       <div className="contact">
-        <a className="button" href="/cv" target="_blank">
+        <Button href="/cv" target="_blank">
           View CV
-        </a>
-        <a className="button" href="mailto:getintouch@pastur.com">
+        </Button>
+        <Button primary href="mailto:getintouch@pastur.com">
           Get in touch
-        </a>
+        </Button>
       </div>
 
       <ul className="social">
