@@ -1,11 +1,11 @@
-export function preloadImage({ id , imgSrc }) {
-    var elem = document.getElementById(id);
-    
-    if (imgSrc) {
-      var img = new Image();
-      img.src = imgSrc;
-      img.onload = function() {
-        elem.classList.add("is-loaded");
-      };
-    }
+export default function preloadImage({ id, imgSrc }) {
+  const elem = document.getElementById(id);
+
+  if (imgSrc) {
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+      elem.classList.add('is-loaded');
+    };
   }
+}

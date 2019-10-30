@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const CenterLayout = styled.div.attrs(props => ({
-  className: "content-wrapper"
+export const CenterLayout = styled.div.attrs(() => ({
+  className: 'content-wrapper',
 }))``;
 
-export const Main = styled.main.attrs(props => ({ className: "about" }))``;
+export const Main = styled.main.attrs(() => ({ className: 'about' }))``;
 
-export const Side = styled.aside.attrs(props => ({ className: "side" }))``;
+export const Side = styled.aside.attrs(() => ({ className: 'side' }))``;

@@ -1,40 +1,40 @@
-import React, { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faStackOverflow
-} from "@fortawesome/free-brands-svg-icons";
+  faStackOverflow,
+} from '@fortawesome/free-brands-svg-icons';
 
-import Button from '../../ui/Button'
+import Button from '../../ui/Button';
 
 const socialLinks = [
   {
-    title: "GitHub profile",
-    href: "https://github.com/pastur",
-    icon: faGithub
+    title: 'GitHub profile',
+    href: 'https://github.com/pastur',
+    icon: faGithub,
   },
   {
-    title: "Stack Overflow profile",
-    href: "https://stackoverflow.com/users/1722207/abel-pastur",
-    icon: faStackOverflow
+    title: 'Stack Overflow profile',
+    href: 'https://stackoverflow.com/users/1722207/abel-pastur',
+    icon: faStackOverflow,
   },
   {
-    title: "Twitter account",
-    href: "https://twitter.com/pastur",
-    icon: faTwitter
+    title: 'Twitter account',
+    href: 'https://twitter.com/pastur',
+    icon: faTwitter,
   },
   {
-    title: "LinkedIn profile",
-    href: "https://www.linkedin.com/in/pastur",
-    icon: faLinkedin
-  }
+    title: 'LinkedIn profile',
+    href: 'https://www.linkedin.com/in/pastur',
+    icon: faLinkedin,
+  },
 ];
 
 export default function Intro() {
   return (
-    <Fragment>
+    <>
       <h1 className="name">Abel Pastur</h1>
       <p className="job">Software Engineer</p>
 
@@ -46,23 +46,21 @@ export default function Intro() {
       </div>
 
       <div className="contact">
-        <Button href="/cv" target="_blank">
-          View CV
-        </Button>
+        <Button href="/cv">View CV</Button>
         <Button primary href="mailto:getintouch@pastur.com">
           Get in touch
         </Button>
       </div>
 
       <ul className="social">
-        {socialLinks.map((link, i) => (
-          <li key={i}>
-            <a href={link.href} title={link.title} target="_blank">
+        {socialLinks.map(link => (
+          <li key={link.title}>
+            <a href={link.href} title={link.title}>
               <FontAwesomeIcon icon={link.icon} />
             </a>
           </li>
         ))}
       </ul>
-    </Fragment>
+    </>
   );
 }

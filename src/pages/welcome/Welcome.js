@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
+import React from 'react';
 
-import { CenterLayout, Main, Side } from "../../ui/layouts/center";
-import Intro from "./Intro";
-import Avatar from "./Avatar";
-import Wallpaper from "./Wallpaper";
+import { CenterLayout, Main, Side } from '../../ui/layouts/center';
+import Intro from './Intro';
+import Avatar from './Avatar';
+import Wallpaper from './Wallpaper';
 
 export default function Welcome() {
   return (
-    <Fragment>
+    <>
       <Wallpaper />
       <CenterLayout>
         <Main>
@@ -17,6 +17,6 @@ export default function Welcome() {
           <Avatar />
         </Side>
       </CenterLayout>
-    </Fragment>
+    </>
   );
 }

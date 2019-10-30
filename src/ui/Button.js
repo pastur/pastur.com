@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Button = styled.a`
-  color: ${props => (props.primary ? "dodgerblue" : "white")};
-  background-color: ${props => (props.primary ? "white" : 'transparent')};
+  color: ${props => (props.primary ? 'dodgerblue' : 'white')};
+  background-color: ${props => (props.primary ? 'white' : 'transparent')};
   border: 1px solid white;
   border-radius: 0.4rem;
   display: inline-block;
@@ -16,7 +16,8 @@ const Button = styled.a`
   will-change: transform;
 
   :hover {
-    background-color: ${props => (props.primary ? "rgb(235, 235, 235)" : 'rgba(255, 255, 255, .2)')};
+    background-color: ${props =>
+      props.primary ? 'rgb(235, 235, 235)' : 'rgba(255, 255, 255, .2)'};
   }
 
   :active {
