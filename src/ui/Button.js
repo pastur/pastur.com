@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
 const Button = styled.a`
-  color: ${props => (props.primary ? 'black' : 'white')};
-  background-color: ${props => (props.primary ? 'white' : 'transparent')};
-  border: 1px solid white;
+  color: white;
+  background-color: ${props =>
+    props.primary ? 'rgb(0, 122, 255)' : 'transparent'};
+  border: 1px solid;
+  border-color: ${props => (props.primary ? 'rgb(0, 122, 255)' : 'white')};
   border-radius: 0.4rem;
   display: inline-block;
   line-height: 1;
@@ -17,7 +19,19 @@ const Button = styled.a`
 
   :hover {
     background-color: ${props =>
-      props.primary ? 'rgb(255, 255, 255, .9)' : 'rgba(255, 255, 255, .1)'};
+      props.primary ? 'rgb(0, 122, 255, 0.8)' : 'rgba(255, 255, 255, .1)'};
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: ${props => (props.primary ? 'white' : '#333')};
+    background-color: ${props =>
+      props.primary ? 'rgb(0, 122, 255)' : 'transparent'};
+    border-color: ${props => (props.primary ? 'rgb(0, 122, 255)' : '#333')};
+
+    :hover {
+      background-color: ${props =>
+        props.primary ? 'rgb(0, 122, 255, 0.8)' : 'rgb(255, 255, 255, 0.8)'};
+    }
   }
 
   :active {

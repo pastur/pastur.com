@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
 }
 
 /* 1. Base */
-html {
+:root {
   background-color: #181a1b;
-  color: #fff;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -20,6 +20,13 @@ html {
   min-height: 100vh;
   min-width: 300px;
   overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: white;
+    color: #333;
+  }
 }
 
 a {
@@ -70,6 +77,12 @@ a {
 .social {
   display: flex;
   margin-top: 1.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .social {
+    color: black;
+  }
 }
 
 .social li {
