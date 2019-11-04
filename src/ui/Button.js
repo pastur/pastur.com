@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Button = styled.a`
   color: ${props => (props.primary ? 'black' : 'white')};
@@ -23,6 +23,6 @@ const Button = styled.a`
   :active {
     transform: scale(0.99) translateY(-1px);
   }
-`;
+`
 
-export default Button;
+export default Button

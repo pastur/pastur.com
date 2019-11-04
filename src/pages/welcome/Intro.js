@@ -1,13 +1,13 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
   faGithub,
   faLinkedin,
   faStackOverflow,
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons'
 
-import Button from '../../ui/Button';
+import Button from '../../ui/Button'
 
 const socialLinks = [
   {
@@ -30,7 +30,7 @@ const socialLinks = [
     href: 'https://www.linkedin.com/in/pastur',
     icon: faLinkedin,
   },
-];
+]
 
 export default function Intro() {
   return (
@@ -62,5 +62,5 @@ export default function Intro() {
         ))}
       </ul>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default () => (
   <div className="content-wrapper">
@@ -7,4 +7,4 @@ export default () => (
       <p>Sorry, we cannot find that page</p>
     </main>
   </div>
-);
+)

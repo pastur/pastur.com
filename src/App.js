@@ -1,8 +1,8 @@
-import React from 'react';
-import { Root, Routes } from 'react-static';
-import { Router } from './components/Router';
-import GlobalStyle from './ui/GlobalStyle';
-import Spinner from './components/Spinner';
+import React from 'react'
+import { Root, Routes } from 'react-static'
+import { Router } from './components/Router'
+import GlobalStyle from './ui/GlobalStyle'
+import Spinner from './components/Spinner'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         </React.Suspense>
       </div>
     </Root>
-  );
+  )
 }
 
-export default App;
+export default App
