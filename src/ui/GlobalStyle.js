@@ -9,8 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
 /* 1. Base */
 html {
-  background-color: #00bcf1;
-  background-image: linear-gradient(to bottom right, #00bcf1, #180cac);
+  background-color: #181a1b;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
@@ -21,7 +20,6 @@ html {
   min-height: 100vh;
   min-width: 300px;
   overflow-x: hidden;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -108,14 +106,14 @@ a {
 }
 
 .hr {
-  background-color: orange;
+  background-color: dodgerblue;
   border: none;
   content: "";
   height: 1px;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   transform-origin: center left;
-  width: 8rem;
+  width: 12rem;
 }
 
 .description {

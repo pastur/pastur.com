@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.a`
-  color: ${props => (props.primary ? 'dodgerblue' : 'white')};
+  color: ${props => (props.primary ? 'black' : 'white')};
   background-color: ${props => (props.primary ? 'white' : 'transparent')};
   border: 1px solid white;
   border-radius: 0.4rem;
@@ -17,7 +17,7 @@ const Button = styled.a`
 
   :hover {
     background-color: ${props =>
-      props.primary ? 'rgb(235, 235, 235)' : 'rgba(255, 255, 255, .2)'};
+      props.primary ? 'rgb(255, 255, 255, .9)' : 'rgba(255, 255, 255, .1)'};
   }
 
   :active {
