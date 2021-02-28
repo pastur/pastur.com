@@ -43,7 +43,6 @@ export default function Intro() {
       <div className="description">
         <p>Front-end Developer</p>
         <p>JavaScript | React | Next.js</p>
-        <p>Based in London</p>
       </div>
 
       <div className="contact">
