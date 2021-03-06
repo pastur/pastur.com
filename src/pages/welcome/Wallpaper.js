@@ -1,17 +1,5 @@
-import React, { useEffect } from 'react'
-import styled from 'styled-components'
-
-import preloadImage from './utils/images'
-
-const StyledWallpaper = styled.div.attrs(() => ({
-  className: 'wallpaper',
-}))``
+import React from 'react'
 
 export default function Wallpaper() {
-  useEffect(
-    () => preloadImage({ id: 'wallpaper', imgSrc: '/images/wallpaper.jpg' }),
-    [],
-  )
-
-  return <StyledWallpaper id="wallpaper" />
+  return <div className="wallpaper is-loaded" />
 }
