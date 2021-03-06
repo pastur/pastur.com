@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function Wallpaper() {
-  return <div className="wallpaper is-loaded" />
-}
+const Wallpaper = () => <div className="wallpaper is-loaded" />
+
+export default Wallpaper

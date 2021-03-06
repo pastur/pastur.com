@@ -5,18 +5,18 @@ import Intro from './Intro'
 import Avatar from './Avatar'
 import Wallpaper from './Wallpaper'
 
-export default function Welcome() {
-  return (
-    <>
-      <Wallpaper />
-      <CenterLayout>
-        <Main>
-          <Intro />
-        </Main>
-        <Side>
-          <Avatar />
-        </Side>
-      </CenterLayout>
-    </>
-  )
-}
+const Welcome = () => (
+  <>
+    <Wallpaper />
+    <CenterLayout>
+      <Main>
+        <Intro />
+      </Main>
+      <Side>
+        <Avatar />
+      </Side>
+    </CenterLayout>
+  </>
+)
+
+export default Welcome

@@ -32,35 +32,35 @@ const socialLinks = [
   },
 ]
 
-export default function Intro() {
-  return (
-    <>
-      <h1 className="name">Abel Pastur</h1>
-      <p className="job">Software Engineer</p>
+const Intro = () => (
+  <>
+    <h1 className="name">Abel Pastur</h1>
+    <p className="job">Software Engineer</p>
 
-      <hr className="hr" />
+    <hr className="hr" />
 
-      <div className="description">
-        <p>Front-end Developer</p>
-        <p>JavaScript | React | Next.js</p>
-      </div>
+    <div className="description">
+      <p>Front-end Developer</p>
+      <p>JavaScript | React | Next.js</p>
+    </div>
 
-      <div className="contact">
-        <Button href="/cv">View CV</Button>
-        <Button primary href="mailto:getintouch@pastur.com">
-          Get in touch
-        </Button>
-      </div>
+    <div className="contact">
+      <Button href="/cv">View CV</Button>
+      <Button primary href="mailto:getintouch@pastur.com">
+        Get in touch
+      </Button>
+    </div>
 
-      <ul className="social">
-        {socialLinks.map(link => (
-          <li key={link.title}>
-            <a href={link.href} title={link.title}>
-              <FontAwesomeIcon icon={link.icon} />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </>
-  )
-}
+    <ul className="social">
+      {socialLinks.map(link => (
+        <li key={link.title}>
+          <a href={link.href} title={link.title}>
+            <FontAwesomeIcon icon={link.icon} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </>
+)
+
+export default Intro
